@@ -23,7 +23,7 @@ return false;
 
 function addItemToShoppingList() {
     let itemName = document.getElementById("item-name");
-    let itemName = document.getElementById("item-amount");
+    let itemAmount = document.getElementById("item-amount");
     let id = getRadomInt(0,1000000);
 
     let itemHtml = creatListItemHtml(itemName.value, itemAmount.value, id);
