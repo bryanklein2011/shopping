@@ -11,10 +11,10 @@ form.addEventListener("submit", (e) => {
 });
 }
 
-Function  handleItemForm(e, formRef) {
-    if (e.preventDefualt) {
+function   handleItemForm(e, formRef) {
+
         e.preventDefualt();
-    }
+    }e.preventDefualt();
 
     addItemShoppingList();
 
@@ -22,7 +22,7 @@ return false;
 
 }
 
-Function addItemToShoppingList() {
+function addItemToShoppingList() {
     let itemName = document.getElementById("item-name");
     let itemName = document.getElementById("item-amount");
     let id = getRadomInt(0,1000000);
@@ -41,7 +41,7 @@ function  setDeleteButtonEvent(id) {
 
     });
 }
-Function creatListItemHtml(itemName, itemAmount, id) {
+function  creatListItemHtml(itemName, itemAmount, id) {
     return <li id="item${id)">
         ${itemName} - ${itemAmount}
         <button id="button$(id)" tpye="button">Delete Item</button>
@@ -49,7 +49,7 @@ Function creatListItemHtml(itemName, itemAmount, id) {
 
 }
 
-Function removeListItem () {
+function  removeListItem () {
     let listItem = document.getElementrById("item"+id);
     listItem.parentNode.removeChild(listItem);
 }
