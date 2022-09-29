@@ -14,7 +14,6 @@ form.addEventListener("submit", (e) => {
 function   handleItemForm(e, formRef) {
 
         e.preventDefualt();
-    }e.preventDefualt();
 
     addItemShoppingList();
 
